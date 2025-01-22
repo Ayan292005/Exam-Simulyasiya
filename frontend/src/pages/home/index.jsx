@@ -40,6 +40,32 @@ function Home() {
           <img src="https://preview.colorlib.com/theme/shop/img/c4.jpg" alt="" />
         </div>
       </div>
+      
+      <div className="back-img"  style={{display:"flex",alignItems:"center"}}>
+        <div className="overlay-2"></div>
+        <div className='cont-2' style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+        <div className='men-wrapper'>
+          <img src="https://preview.colorlib.com/theme/shop/img/l1.jpg" alt="" />
+          <p>Long Sleeve shirt</p>
+          <p>$150.00</p>
+        </div>
+        <div className='men-wrapper'>
+          <img src="https://preview.colorlib.com/theme/shop/img/l1.jpg" alt="" />
+          <p>Long Sleeve shirt</p>
+          <p>$150.00</p>
+        </div>
+        <div className='men-wrapper'>
+          <img src="https://preview.colorlib.com/theme/shop/img/l1.jpg" alt="" />
+          <p>Long Sleeve shirt</p>
+          <p>$150.00</p>
+        </div>
+        <div className='men-wrapper'>
+          <img src="https://preview.colorlib.com/theme/shop/img/l1.jpg" alt="" />
+          <p>Long Sleeve shirt</p>
+          <p>$150.00</p>
+        </div>
+        </div>
+      </div>
     </>
   )
 }
