@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {NavLink} from "react-router-dom"
 import { FaHeart } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg";
+import { favoritesContext } from '../../context/FavoritesContext';
 
 function Navbar() {
+    let { favorites, setFavorites } = useContext(favoritesContext)
+  
   return (
     <>
       <div style={{ backgroundColor: "#f9f9ff" }}>
@@ -25,7 +28,7 @@ function Navbar() {
             <NavLink to="">Home</NavLink>
             <NavLink to="/products">Products</NavLink>
             <NavLink to="/add">Add Product</NavLink>
-            <NavLink to="/favorites"><FaHeart /></NavLink>
+            <NavLink to="/favorites"><FaHeart /><span>{favorites.length}</span></NavLink>
           </div>
         </div>
       </div>

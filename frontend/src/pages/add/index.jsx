@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
 let DBurl = "http://localhost:1010/shop"
+import { Helmet } from "react-helmet";
 
 
 function Add() {
@@ -48,7 +49,12 @@ function Add() {
 
 
   return (
-    <div>
+    <div style={{height:"100vh"}}>
+             <Helmet>
+              <meta charSet="utf-8" />
+              <title>Add Page</title>
+            
+            </Helmet>
       <form onSubmit={formik.handleSubmit} className='cont-2 add-form'>
    
         <div className='input-wrapper'>
